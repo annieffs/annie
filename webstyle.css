@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
+
 }
 .banner{
     background-image: linear-gradient(rgba(0, 0, 0, 0.89),rgba(0, 0, 0, 0.596)), url("./klo.jpg");
@@ -11,7 +12,7 @@
     height: 80vh;
 }
 span.logo, .logo1{
-    margin-right: 45% !important;
+    margin-right: 43vw !important;
     font-size: 19px;
     color: crimson; 
     width: 10%;
@@ -31,10 +32,12 @@ span.logo, .logo1{
     overflow: hidden;
     position: fixed;
     top: 0;  
+    z-index: 1;
 }
 ul{
     list-style: none;
     margin-right: 5%;
+    margin-top: 2px;
   
 }
 li{
@@ -203,7 +206,7 @@ input, select, textarea {
     border: crimson;
 }
 footer{
-    background-color: rgba(21, 78, 70, 0.644)
+    background-color: #669999;
 }
 .icons{
     display: flex;

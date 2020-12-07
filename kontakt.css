@@ -19,7 +19,7 @@
     top: 0;  
 }
 span.logo, .logo1{
-    margin-right: 43% !important;
+    margin-right: 43vw !important;
     font-size: 19px;
     color: crimson; 
     width: 10%;
@@ -27,6 +27,7 @@ span.logo, .logo1{
 ul{
     list-style: none;
     margin-right: 5%;
+    margin-top: 2px;
   
 }
 li{
@@ -123,10 +124,10 @@ span.logo{
     
 }
 .fa1{
-    font-size: 35px;
+    font-size: 22px;
     margin-top: 10%;
     margin-left: 5%;
 }
 .material-icons{
-    font-size: 35px;
+    font-size: 22px;
 }
