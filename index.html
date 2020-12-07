@@ -4,53 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./webstyle.css">
+    <link rel="stylesheet" href="./mobile.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>connected.</title>
 </head>
 <body> 
     <header>
         <div class="nav">
             <span class="logo"><a class="logo1" href="./index.html">connected.</a></span>
-            <ul>
-                <li><a href="./index.html">NASLOVNICA</a></li>
-                <li><a href="./index1.html">O NAMA</a></li>
-                <li><a href="./index2.html">USLUGE</a></li>
-                <li><a href="./index3.html">KONTAKT</a></li>
-                <li><button>Kontaktiraj nas! <i class="fa fa-phone"></i></button ></li>
-            </ul>
+            
+            <div class="menu" id="myMenu">
+                <ul>
+                    <li><a href="./index.html">NASLOVNICA</a></li>
+                    <li><a href="./index1.html">O NAMA</a></li>
+                    <li><a href="./index2.html">USLUGE</a></li>
+                    <li><a href="./index3.html">KONTAKT</a></li>
+                    <li><button>Kontaktiraj nas! <i class="fa fa-phone"></i></button ></li>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+                </ul>
+            </div>
         </div> 
     </header>
+
+
     <div class="banner"> 
         <p class="p1"> OSTANITE POVEZANI uz <span class="span">connected.</span></p>
     </div> 
-    <h1>Sve što Vam treba za uspješno poslovanje na jednome mjestu.</h1>
-    <h1 class="t3">NE ZNAM ŠTO DA TU NAPIŠEM</h1>
-    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quos nobis ipsum doloribus recusandae alias, veniam, cupiditate sint esse obcaecati provident quia commodi ipsa! Iure nihil quia eos non soluta?</h2>
-  
+    <div class="paragraf">
+        <h1>Sve što Vam treba za uspješno poslovanje na jednome mjestu.</h1>
+        <h1 class="t3">NE ZNAM ŠTO DA TU NAPIŠEM</h1>
+        <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quos nobis ipsum doloribus recusandae alias, veniam, cupiditate sint esse obcaecati provident quia commodi ipsa! Iure nihil quia eos non soluta?</h2>
    </div> 
-   <div class="one">
-        <p class="p2"> WEB DIZAJN</p>
+
+
+   <div class="one gridbig">
+        <p class="p2 gridsmall"> WEB DIZAJN</p>
     </div>
-<p class="onedescp" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nesciunt maiores porro debitis optio necessitatibus, ipsam quaerat praesentium molestias dignissimos facere, blanditiis molestiae reiciendis? Omnis iusto nulla provident unde animi?</p>
-    <div class="two" >
-        <p class="p2"> WEB MARKETING</p>
+
+    <div class="paragraf">
+        <p class="onedescp" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur nesciunt maiores porro debitis optio necessitatibus, ipsam quaerat praesentium molestias dignissimos facere, blanditiis molestiae reiciendis? Omnis iusto nulla provident unde animi?</p>
     </div>
-    <p class="onedescp" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla culpa nobis sint unde provident voluptas iure, labore veritatis quia neque modi cum mollitia atque ipsam animi. Adipisci quo corrupti accusamus!</p>
-<div class="three">
-    <p class="p3" >KORISNIČKA PODRŠKA</p>
-</div>
-    <p class="onedescp" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, architecto culpa? Deserunt, laboriosam animi reprehenderit dolore, error sed est, officia velit aliquid nihil illum voluptas. Distinctio obcaecati nemo ratione aspernatur.</p>
+
+    <div class="two gridbig" >
+        <p class="p2 gridsmall"> WEB MARKETING</p>
+    </div>
+
+    <div class="paragraf">
+        <p class="onedescp" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla culpa nobis sint unde provident voluptas iure, labore veritatis quia neque modi cum mollitia atque ipsam animi. Adipisci quo corrupti accusamus!</p>
+    </div>
+
+    <div class="three gridbig">
+    <p class="p3 gridsmall" >KORISNIČKA PODRŠKA</p>
+    </div>
+
+    <div class="paragraf">
+        <p class="onedescp" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, architecto culpa? Deserunt, laboriosam animi reprehenderit dolore, error sed est, officia velit aliquid nihil illum voluptas. Distinctio obcaecati nemo ratione aspernatur.</p>
+    </div>
 
 
-
-        <footer>
-              
-     
-           
-      <form>
+    <footer>
+                    
+        <form>
         <div class="form">
             <h3> Zatražite ponudu!</h3>
             <label for="fname"></label>
@@ -59,20 +78,32 @@
             <input type="text" id="lname" name="lname" placeholder="E-mail"> 
             <label for="message"></label> <br>
             <textarea class="mess" name="message" id="message" rows="6" placeholder="Vaša Poruka"></textarea> <br>
-            <input class="send" type="submit" value="Send Message" class="alt" placeholder="Pošalji!">   
-     </form>
+            <input class="send" type="submit" value="Send" class="alt" placeholder="Pošalji!">   
+        </form>
 
 
         <div class="icons">
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-instagram"></a>
-      
-  </div> 
-<h4>© somebrewery d.o.o. All rights reserved <br>
-   somebrewery d.o.o., adresa 10, 10000 Zagreb, Croatia<br>
-   info@somebrewery.hr<br>  </h4>
- </footer>  
-</div>  
+        </div>
+
+        <h4>© connected. d.o.o. All rights reserved <br>
+            connected. d.o.o., adresa 10, 10000 Zagreb, Croatia<br>
+            info@connected.hr<br>  
+        </h4>
+    </footer>  
+    </div> 
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myMenu");
+            if (x.className === "menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "menu";
+            }
+        }
+    </script>
 </body>
 </html>

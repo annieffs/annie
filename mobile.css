@@ -1,0 +1,62 @@
+@media screen and (max-width: 768px) {
+    .logo, .logo1{
+         font-size: 19px; 
+         width: 10%;
+
+     }
+
+     /*burger*/
+     ul {
+         display: grid;
+         justify-items: center;
+         justify-content: center;
+        align-content: center;
+     }
+    .menu a {
+        display: none;
+    }
+    .menu button {
+        display: none;
+    }
+    .menu a.icon {
+        float: right;
+        display: block !important;
+        
+     }
+     .menu.responsive {
+         position: relative;
+        }
+     .menu.responsive a.icon {
+    
+       position: absolute;
+       right: 5%;
+       top: 0;
+     }
+    
+
+     .menu.responsive a {
+        float: none;
+        display: grid;
+        text-align: center;
+        justify-items: center;
+        align-content: center;
+     }
+   
+     .menu.responsive a:first-child {
+         padding-top: 35px;
+     }
+
+    
+
+
+    .p1{
+        font-size: 30px;
+        margin-top: 200px;
+    }
+    .send{
+         
+        padding: 20px 25px;
+    }
+}
+
+  

@@ -3,63 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./onama.css">
+    <title>connected.</title>
+
+   
+    <link rel="stylesheet" href="./webstyle.css">
+    <link rel="stylesheet" href="./mobile.css">
+
+
+    
+
+    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
+    <<header>
         <div class="nav">
             <span class="logo"><a class="logo1" href="./index.html">connected.</a></span>
-            <ul>
-                <li><a href="./index.html">NASLOVNICA</a></li>
-                <li><a href="./index1.html">O NAMA</a></li>
-                <li><a href="./index2.html">USLUGE</a></li>
-                <li><a href="./index3.html">KONTAKT</a></li>
-                <li><button>Kontaktiraj nas! <i class="fa fa-phone"></i></button ></li>
-            </ul>
+            
+            <div class="menu" id="myMenu">
+                <ul>
+                    <li><a href="./index.html">NASLOVNICA</a></li>
+                    <li><a href="./index1.html">O NAMA</a></li>
+                    <li><a href="./index2.html">USLUGE</a></li>
+                    <li><a href="./index3.html">KONTAKT</a></li>
+                    <li><button>Kontaktiraj nas! <i class="fa fa-phone"></i></button ></li>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+                </ul>
+            </div>
         </div> 
     </header>
     <div class="tko" >
         <h1>TKO SMO MI?</h1>
-            <p class="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis tempore similique nulla ratione porro natus, illo dolor soluta quidem, omnis aliquid. Debitis quas alias eius similique corporis odit, quis quae?</p>
+            <p class="p1on">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis tempore similique nulla ratione porro natus, illo dolor soluta quidem, omnis aliquid. Debitis quas alias eius similique corporis odit, quis quae?</p>
     </div>
     <div class="cime" >
         <h1>ČIME SE BAVIMO?</h1>
-            <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor tempora doloremque praesentium magni molestias tempore, qui eum eveniet non necessitatibus vero repudiandae molestiae. Quibusdam est ab impedit aperiam alias et.</p>
+            <p class="p1on">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor tempora doloremque praesentium magni molestias tempore, qui eum eveniet non necessitatibus vero repudiandae molestiae. Quibusdam est ab impedit aperiam alias et.</p>
     </div>
     <div class="Gdje">
         <h1>GDJE SE NALAZIMO?</h1>
-        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam provident numquam neque impedit ea. Animi aut error est ducimus, adipisci possimus corrupti voluptas, at consectetur nam, consequatur nisi quisquam esse.</p>
+        <p class="p1on">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam provident numquam neque impedit ea. Animi aut error est ducimus, adipisci possimus corrupti voluptas, at consectetur nam, consequatur nisi quisquam esse.</p>
     </div>
+
     <footer>
-     
-        
-    
-<form>
-  <div class="form">
-      <h3> Zatražite ponudu!</h3>
- 
-      <label for="fname"></label>
-      <input type="text" id="fname" name="fname" placeholder="Ime"> 
-      <label for="e-mail"></label>
-      <input type="text" id="lname" name="lname" placeholder="E-mail"> 
-      <label for="message"></label> <br>
-      <textarea class="mess" name="message" id="message" rows="6" placeholder="Vaša Poruka"></textarea> <br>
-      <input class="send" type="submit" value="Send Message" class="alt" placeholder="Pošalji!">   
-</form>
+                    
+        <form>
+        <div class="form">
+            <h3> Zatražite ponudu!</h3>
+            <label for="fname"></label>
+            <input type="text" id="fname" name="fname" placeholder="Ime"> 
+            <label for="e-mail"></label>
+            <input type="text" id="lname" name="lname" placeholder="E-mail"> 
+            <label for="message"></label> <br>
+            <textarea class="mess" name="message" id="message" rows="6" placeholder="Vaša Poruka"></textarea> <br>
+            <input class="send" type="submit" value="Send" class="alt" placeholder="Pošalji!">   
+        </form>
 
 
-  <div class="icons">
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-instagram"></a>
+        <div class="icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
 
-</div> 
-<h4>© somebrewery d.o.o. All rights reserved <br>
-somebrewery d.o.o., adresa 10, 10000 Zagreb, Croatia<br>
-info@somebrewery.hr<br>  </h4>
-</footer>  
+        <h4>© connected. d.o.o. All rights reserved <br>
+            connected. d.o.o., adresa 10, 10000 Zagreb, Croatia<br>
+            info@connected.hr<br>  
+        </h4>
+    </footer>  
+    </div> 
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myMenu");
+            if (x.className === "menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "menu";
+            }
+        }
+    </script>
+</body>
+</html>
 </body>
 </html>

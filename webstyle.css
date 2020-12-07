@@ -3,67 +3,205 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
+    
 
 }
-.banner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.89),rgba(0, 0, 0, 0.596)), url("./klo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-}
-span.logo, .logo1{
-    margin-right: 43vw !important;
-    font-size: 19px;
-    color: crimson; 
-    width: 10%;
- 
-    
-}
+
+/*navigation*/
+
 .nav {
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
     background-color: white;
-}
-.nav{
-  
     font-size: 17px;
     padding: 15px;
     overflow: hidden;
     position: fixed;
     top: 0;  
+    /*-webkit-backface-visibility: hidden;*/
     z-index: 1;
 }
+
+.logo, .logo1{
+   /* margin-right: 43vw !important;*/
+    font-size: 19px;
+    color: crimson; 
+    width: 10%;
+    float: left;
+   
+}
+
 ul{
     list-style: none;
     margin-right: 5%;
     margin-top: 2px;
-  
+    align-items: baseline;
+    display: flex;
+    justify-content: flex-end;
 }
 li{
     display: inline-block;    
+}
+li a:hover{
+    color: crimson;
+    transition: all 0.4s ease 0s;
 }
 a{
     display: block;
     text-decoration: none;
     padding: 11px 15px;
     color: black;
+    
 }
-li a:hover{
-    color: crimson;
-    transition: all 0.4s ease 0s;
+
+/*hamburger*/
+.menu {
+    overflow: hidden;
 }
+.menu .icon {
+    display: none;
+}
+
+
+
+
+/*banner*/
+
+.banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.89),rgba(0, 0, 0, 0.596)), url("./klo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+.p1{
+    margin-top: 230px !important;
+    position: absolute;
+    font-size: 40px;
+    letter-spacing: 8px;
+    color:black;
+    margin-top: 20%;
+    background-color: white;
+    padding: 12px 15px;
+    border:  1px solid white;
+    width: 75vw;
+}
+.span{
+    border: 1px solid white;
+    width: 45%;
+    /*padding: 12px 15px;*/
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 8px;
+    background-color: white;
+    color: crimson !important;
+}
+
+/*texts*/
+
 h1{
     text-align: center;
     padding: 21px 10px;
     letter-spacing: 4px;
     margin-top: 3%;
 }
+.t3{
+    margin-top: 8%;
+}
 h2{
     text-align: center;
     margin-top: 10%;
     margin-bottom: 10%;
 }
+.paragraf {
+   margin: 0 10% 0 10%; /* OVDE MOZES 10% SVE 4 STRANE */
+   padding-top: 25px;
+   padding-bottom: 25px;
+}
+.onedescp{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 25px;
+}
+
+/*
+ *  GRIDS --- dont hate me
+ */
+
+.gridbig{
+    display:grid;
+    align-items:center;
+    justify-content: center;
+    align-content: center;
+
+    grid-template:
+    ". . ." 1fr,
+    ". p ." 1fr,
+    ". . ." 1fr /
+    1fr 1fr 1fr;
+}
+.gridsmall{
+    display: grid;
+    grid-area: p;
+}
+
+
+
+/* banners - dizajn i marketing */
+.one{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.89),rgba(0, 0, 0, 0.596)), url("./pro12.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    width: 100%;
+}
+.p2{
+    
+    /*position: absolute;*/
+    text-align: center;
+    font-size: 40px;
+    /*margin-left: 37%;
+    margin-top: 14%;*/
+    color: black;
+    background-color: white;
+    padding: 10px 30px;  
+}
+.two{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.89),rgba(0, 0, 0, 0.658)), url("./marketing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    width: 100%;
+}
+
+/*banner - korisnicka podrska */
+
+.p3{
+ 
+    /*position: absolute;*/
+    text-align: center;
+    font-size: 40px;
+    /*margin-top: 13%;
+    margin-left: 33%;*/
+    color: black;
+    background-color: white;
+    padding: 10px 30px;
+}
+
+
+.three{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.89),rgba(0, 0, 0, 0.596)), url("./tech.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    width: 100%;
+}
+
+
+/*ni sam bog ne zna*/
+
 h3{
     text-align: center;
     font-size: 30px;
@@ -79,82 +217,12 @@ h6{
     font-size: 25px;
     padding: 40px;
 }
-.t3{
-    margin-top: 8%;
-}
-.p1{
-    
-    position: absolute;
-    font-size: 40px;
-    letter-spacing: 8px;
-    color:black;
-    margin-top: 20%;
-    background-color: white;
-    padding: 12px 15px;
-    border:  1px solid white;
-}
-.p2{
-    position: absolute;
-    text-align: center;
-    font-size: 40px;
-    margin-left: 37%;
-    margin-top: 14%;
-    color: black;
-    background-color: white;
-    padding: 10px 30px;
-    
-}
-.p3{
- 
-    position: absolute;
-    text-align: center;
-    font-size: 40px;
-    margin-top: 13%;
-    margin-left: 33%;
-    color: black;
-    background-color: white;
-    padding: 10px 30px;
-}
-.one{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.89),rgba(0, 0, 0, 0.596)), url("./pro12.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-    width: 100%;
-}
-.two{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.89),rgba(0, 0, 0, 0.658)), url("./marketing.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-    width: 100%;
-}
-.three{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.89),rgba(0, 0, 0, 0.596)), url("./tech.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-    width: 100%;
-}
-.onedescp{
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    font-size: 25px;
-}
-.span{
-    border: 1px solid white;
-    width: 45%;
-    padding: 12px 15px;
-    text-align: center;
-    font-size: 45px;
-    letter-spacing: 8px;
-    background-color: white;
-    color: crimson !important;
-}
+
+
+
+
+
+
 button{
     padding: 8px 10px;
     background-color: crimson;
@@ -168,6 +236,7 @@ button:hover{
     background-color:rgba(21, 78, 70, 0.644);
     transition: all 0.4s ease 0s;
 }
+
 .usluge{
     display: flex;
     justify-content: space-around;
@@ -184,6 +253,11 @@ button:hover{
     padding: 20px;
     margin-top: 10%;
 }
+input, select, textarea {
+    width: 25%;
+    padding: 20px 40px;
+    color: black;
+}
 .mess{
     width: 57%;
     padding: 30px;
@@ -193,18 +267,14 @@ button:hover{
     width: 20%;
     margin-top: 1%;
 }
-
-input, select, textarea {
-    width: 25%;
-    padding: 20px 40px;
-    color: black;
-}
 .send:hover{
     background-color: crimson;
     transition: all 0.4s ease 0s;
     color: white;
     border: crimson;
 }
+
+
 footer{
     background-color: #669999;
 }
@@ -227,3 +297,26 @@ footer{
     color: white;
     transition: all 0.4s ease 0s;
 }
+
+
+/*o nama */ 
+
+.p1on{
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    margin: 0 10% 0 10%;
+}
+.tko{
+    margin-top: 10%;
+}
+
+/*usluge*/
+
+
+.h1usluge{
+    margin-top: 10%;
+    font-size: 30px;
+    text-align: center;
+}
+
