@@ -4,9 +4,10 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     
-
 }
-
+*:focus {
+    outline: none;
+}
 /*navigation*/
 
 .nav {
@@ -17,17 +18,14 @@
     overflow: hidden;
     position: fixed;
     top: 0;  
-    /*-webkit-backface-visibility: hidden;*/
     z-index: 1;
 }
 
 .logo, .logo1{
-   /* margin-right: 43vw !important;*/
     font-size: 19px;
     color: crimson; 
     width: 10%;
     float: left;
-   
 }
 
 ul{
@@ -49,8 +47,7 @@ a{
     display: block;
     text-decoration: none;
     padding: 11px 15px;
-    color: black;
-    
+    color: black; 
 }
 
 /*hamburger*/
@@ -87,16 +84,13 @@ a{
 .span{
     border: 1px solid white;
     width: 45%;
-    /*padding: 12px 15px;*/
     text-align: center;
     font-size: 45px;
     letter-spacing: 8px;
     background-color: white;
     color: crimson !important;
 }
-
 /*texts*/
-
 h1{
     text-align: center;
     padding: 21px 10px;
@@ -112,7 +106,7 @@ h2{
     margin-bottom: 10%;
 }
 .paragraf {
-   margin: 0 10% 0 10%; /* OVDE MOZES 10% SVE 4 STRANE */
+   margin: 0 10% 0 10%; /*  10% SVE 4 STRANE */
    padding-top: 25px;
    padding-bottom: 25px;
 }
@@ -124,7 +118,7 @@ h2{
 }
 
 /*
- *  GRIDS --- dont hate me
+ *  GRIDS
  */
 
 .gridbig{
@@ -143,9 +137,6 @@ h2{
     display: grid;
     grid-area: p;
 }
-
-
-
 /* banners - dizajn i marketing */
 .one{
     background-image: linear-gradient(rgba(0, 0, 0, 0.89),rgba(0, 0, 0, 0.596)), url("./pro12.jpg");
@@ -156,12 +147,8 @@ h2{
     width: 100%;
 }
 .p2{
-    
-    /*position: absolute;*/
     text-align: center;
     font-size: 40px;
-    /*margin-left: 37%;
-    margin-top: 14%;*/
     color: black;
     background-color: white;
     padding: 10px 30px;  
@@ -174,22 +161,14 @@ h2{
     height: 60vh;
     width: 100%;
 }
-
 /*banner - korisnicka podrska */
-
 .p3{
- 
-    /*position: absolute;*/
     text-align: center;
     font-size: 40px;
-    /*margin-top: 13%;
-    margin-left: 33%;*/
     color: black;
     background-color: white;
     padding: 10px 30px;
 }
-
-
 .three{
     background-image: linear-gradient(rgba(0, 0, 0, 0.89),rgba(0, 0, 0, 0.596)), url("./tech.jpg");
     background-repeat: no-repeat;
@@ -198,31 +177,19 @@ h2{
     height: 60vh;
     width: 100%;
 }
-
-
-/*ni sam bog ne zna*/
-
+/*zatražite ponudu*/
 h3{
     text-align: center;
     font-size: 30px;
     padding: 80px;
     color: white; 
 }
+/*copyright*/
 h4{
     font-size: 10px;
     bottom: 0;
 }
-h6{
-    text-align: center;
-    font-size: 25px;
-    padding: 40px;
-}
-
-
-
-
-
-
+/* buttons */
 button{
     padding: 8px 10px;
     background-color: crimson;
@@ -236,7 +203,6 @@ button:hover{
     background-color:rgba(21, 78, 70, 0.644);
     transition: all 0.4s ease 0s;
 }
-
 .usluge{
     display: flex;
     justify-content: space-around;
@@ -246,7 +212,7 @@ button:hover{
     margin-left: 50px;
     letter-spacing: 4px;
 }
-
+/* forma */
 .form {
     text-align: center;
     font-size: 25px;
@@ -258,6 +224,8 @@ input, select, textarea {
     padding: 20px 40px;
     color: black;
 }
+
+
 .mess{
     width: 57%;
     padding: 30px;
@@ -273,17 +241,15 @@ input, select, textarea {
     color: white;
     border: crimson;
 }
-
-
+/* footer */
 footer{
-    background-color: #669999;
+    background-color: #787878;
 }
 .icons{
     display: flex;
     justify-content: center;
     padding: 20px;
 }
-
 .icons a{
     display: inline-block;
     font-size: 35px;
@@ -292,15 +258,12 @@ footer{
     color: crimson;   
     margin-top: 10%;
 }
-
 .icons a:hover {
     color: white;
     transition: all 0.4s ease 0s;
 }
 
-
 /*o nama */ 
-
 .p1on{
     font-size: 20px;
     text-align: center;
@@ -310,10 +273,7 @@ footer{
 .tko{
     margin-top: 10%;
 }
-
 /*usluge*/
-
-
 .h1usluge{
     margin-top: 10%;
     font-size: 30px;
